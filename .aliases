@@ -20,6 +20,9 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 
+alias work="cd ~/Documents/workspace"
+alias wclj="cd ~/Documents/workspace.clj"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -31,7 +34,7 @@ fi
 alias l="ls -lF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+alias ll="ls -laF ${colorflag}"
 
 # List only directories
 alias lsd='ls -lF ${colorflag} | grep "^d"'
